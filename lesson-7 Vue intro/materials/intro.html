@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: greenyellow;
+        }
+
+        .prodcuts {
+            /* background-color: yellow; */
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .prodcut {
+            padding: 20px;
+            background-color: yellow;
+            margin-left: 10px;
+        }
+    </style>
+    
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="app">
+
+         <!-- BASIC  -->
+
+        <!-- {{ app }}
+        <br>
+        {{ isMarried? 'жен': 'foo' }}
+        <br>
+        <div>
+            {{ isMarried? 'aaa': 'vvv' }}
+        </div>
+
+
+        <hr>
+        <h2>Attrs</h2>
+        <input type="text" v-model="foo">
+        <button :disabled="foo.length < 2">click</button>
+        <div class="error" v-show="!foo.length">Eroorr Opppps !!!</div>
+
+        <hr />
+
+        <div v-for="product in products">
+            {{ product.title }}
+        </div>
+
+
+        <hr>
+
+
+        <div v-if='isMarried' class="foo-1">
+            Fooo --- 1
+        </div>
+        <div v-else class="foo-2">
+            Fooo --- 2
+        </div>
+
+        
+        <div v-if='a' class="a-1">
+            a --- 1
+        </div>
+        <div v-else class="a-2">
+            a --- 2
+        </div>
+
+
+        <h2>Events</h2>
+
+        <button @click="onClick"> click </button> -->
+
+
+        <!-- COMPONENTS -->
+
+        <app-products></app-products>
+    </div>
+    <script src="intro.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>
